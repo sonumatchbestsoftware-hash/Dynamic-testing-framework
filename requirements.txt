@@ -1,0 +1,9 @@
+pytest
+pytest-html
+selenium
+openpyxl
+requests
+beautifulsoup4
+pandas
+PyYAML
+webdriver-manager

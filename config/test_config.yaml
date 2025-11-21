@@ -1,0 +1,30 @@
+# Top-level configuration for dynamic website testing
+base_url: "https://gobill.ai"
+browser: "chrome"
+headless: true
+
+credentials:
+  username: "org4@gmail.com"
+  
+  password: "Him@nshi123"
+
+
+# Turn test suites on/off quickly
+test_flags:
+  functional: true
+  ui: true
+  security: true
+  regression: true
+
+# Optional: list of public pages to probe for status/SEO/basic checks
+pages:
+  - "/"
+  - "/login"
+  - "/about"
+  - "/models"
+  - "/usecases"
+  - "/flow"
+
+timeouts:
+  implicit: 5
+  explicit: 15
