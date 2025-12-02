@@ -1,10 +1,22 @@
-# Element locators used by Selenium-based UI tests
-# Update these per-website without changing test code.
+# Element locators used by Selenium tests
+
 homepage:
-  logo: { by: "css selector", value: "img.site-logo, img[alt*='logo']" }
-  primary_cta: { by: "css selector", value: "a.btn, button.btn, [data-test='primary-cta']" }
+  logo: 
+    by: "css selector"
+    value: "img[alt*='logo'], img.site-logo"
+  primary_cta: 
+    by: "css selector"
+    value: "a.btn, button.btn, [data-test='primary-cta']"
 
 auth:
-  username: { by: "css selector", value: "input[name='email'], input#email" }
-  password: { by: "css selector", value: "input[name='password'], input#password" }
-  submit:   { by: "css selector", value: "button[type='submit'], button.login, [data-test='login-btn']" }
+  username:
+    by: "css selector"
+    value: "input[name='email'], input[type='email']"
+
+  password:
+    by: "css selector"
+    value: "input[name='password'], input[type='password']"
+
+  submit:
+    by: "css selector"
+    value: "button[type='submit'], button:contains('Sign In')"

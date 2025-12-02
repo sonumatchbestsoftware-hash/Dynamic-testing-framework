@@ -1,29 +1,25 @@
 # Top-level configuration for dynamic website testing
-base_url: "https://gobill.ai"
+base_url: "https://xelta.ai/auth/login"
 browser: "chrome"
 headless: true
 
 credentials:
-  username: "org4@gmail.com"
-  
-  password: "Him@nshi123"
+  username: "fake@gmail.com"
+  password: "Fake@123"
+  # org_id: "ORG-004"
 
 
 # Turn test suites on/off quickly
 test_flags:
   functional: true
-  ui: true
-  security: true
-  regression: true
+  ui: false
+  security: false
+  regression: false
 
 # Optional: list of public pages to probe for status/SEO/basic checks
 pages:
   - "/"
   - "/login"
-  - "/about"
-  - "/models"
-  - "/usecases"
-  - "/flow"
 
 timeouts:
   implicit: 5

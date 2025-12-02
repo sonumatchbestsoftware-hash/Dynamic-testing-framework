@@ -1,5 +1,7 @@
 import pytest
 from utils.data_reader import load_config
+# Import and re-export session fixtures so pytest discovers them
+from utils.browser_setup import cfg, base_url, browser  # noqa: F401
 
 def pytest_collection_modifyitems(config, items):
     # Allow flag-based skipping via config file

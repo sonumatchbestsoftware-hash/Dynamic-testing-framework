@@ -1,9 +1,25 @@
+# Test Framework
 pytest
 pytest-html
+pytest-xdist
+pytest-rerunfailures
+
+# Browser Automation
 selenium
-openpyxl
+seleniumbase
+webdriver-manager
+playwright
+pytest-playwright
+selene
+
+# Parsing and Data Processing
 requests
 beautifulsoup4
+lxml
 pandas
+openpyxl
 PyYAML
-webdriver-manager
+
+# Utilities
+python-dotenv
+loguru

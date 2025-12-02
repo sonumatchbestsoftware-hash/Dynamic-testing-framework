@@ -1,0 +1,58 @@
+suite,test,classname,time,status,message
+pytest,test_public_pages_reachable,tests.test_functional,3.006,passed,
+pytest,test_login_flow,tests.test_functional,21.826,skipped,"Login selectors not found: Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""input[name='email'], input#email""}
+  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xee4103
+	0xee4144
+	0xcee71d
+	0xd3a03d
+	0xd3a41b
+	0xd817f2
+	0xd5c954
+	0xd7ee17
+	0xd5c706
+	0xd2da30
+	0xd2ed54
+	0x11557b4
+	0x115098a
+	0xf0c392
+	0xefc4c8
+	0xf0324d
+	0xeec478
+	0xeec63c
+	0xed67ca
+	0x763b7ba9
+	0x77cbc3ab
+	0x77cbc32f"
+pytest,test_homepage_hash_stable,tests.test_regression,0.874,skipped,No baseline hash set for homepage yet
+pytest,test_https_enforced,tests.test_security,0.841,passed,
+pytest,test_basic_security_headers,tests.test_security,0.829,skipped,"Missing recommended headers: content-security-policy, x-frame-options, x-content-type-options, referrer-policy"
+pytest,test_homepage_logo_visible,tests.test_ui,6.135,passed,
+pytest,test_primary_cta_present,tests.test_ui,7.694,skipped,"CTA selector not found: Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""a.btn, button.btn, [data-test='primary-cta']""}
+  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xee4103
+	0xee4144
+	0xcee71d
+	0xd3a03d
+	0xd3a41b
+	0xd817f2
+	0xd5c954
+	0xd7ee17
+	0xd5c706
+	0xd2da30
+	0xd2ed54
+	0x11557b4
+	0x115098a
+	0xf0c392
+	0xefc4c8
+	0xf0324d
+	0xeec478
+	0xeec63c
+	0xed67ca
+	0x763b7ba9
+	0x77cbc3ab
+	0x77cbc32f"
