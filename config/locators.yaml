@@ -1,22 +1,38 @@
-# Element locators used by Selenium tests
+# Element locators for xelta.ai
+# Using XPath for better dynamic content handling
 
 homepage:
-  logo: 
+  logo:
     by: "css selector"
-    value: "img[alt*='logo'], img.site-logo"
+    value: "img[src*='logo']"
   primary_cta: 
     by: "css selector"
-    value: "a.btn, button.btn, [data-test='primary-cta']"
+    value: ".inline-flex"
 
 auth:
   username:
-    by: "css selector"
-    value: "input[name='email'], input[type='email']"
+    by: "xpath"
+    value: "//input[@type='email'] | //input[@name='email'] | //input[contains(@placeholder, 'mail')] | //input[contains(@placeholder, 'Mail')]"
 
   password:
-    by: "css selector"
-    value: "input[name='password'], input[type='password']"
+    by: "xpath"
+    value: "//input[@type='password'] | //input[@name='password'] | //input[contains(@placeholder, 'password')]"
+
+  org_id:
+    by: "xpath"
+    value: "//input[@name='org_id'] | //input[@name='orgId'] | //input[contains(@placeholder, 'org')] | //input[contains(@placeholder, 'Org')]"
 
   submit:
+    by: "xpath"
+    value: "//button[contains(text(), 'Login') or contains(text(), 'Sign In') or contains(text(), 'Submit')] | //button[@type='submit']"
+
+login:
+  username:
     by: "css selector"
-    value: "button[type='submit'], button:contains('Sign In')"
+    value: "input[type='email'], input[name*=email], input[placeholder*=email]"
+  password:
+    by: "css selector"
+    value: "input[type='password'], input[name*=pass], input[placeholder*=password]"
+  submit:
+    by: "css selector"
+    value: "button[type='submit'], input[type='submit']"

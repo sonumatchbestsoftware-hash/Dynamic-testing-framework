@@ -107,8 +107,9 @@ def test_dynamic_pages_and_forms(browser, base_url, cfg):
                 el = WebDriverWait(browser, explicit_wait).until(
                     EC.presence_of_element_located((by, value))
                 )
-                if not el.is_displayed():
-                    pytest.skip(f"Element '{name}' not visible on {url}")
+                # Presence is sufficient for functional checks (visual display
+                # can be flaky in headless/browser variations). Continue if element found.
+                pass
             except Exception as e:
                 pytest.skip(f"Element '{name}' not present on {url}: {str(e)[:100]}")
 

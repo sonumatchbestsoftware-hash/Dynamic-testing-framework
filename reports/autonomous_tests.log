@@ -1,0 +1,2 @@
+2025-12-02 17:38:28.622 | INFO     | utils.locator_generator:_init_driver:46 - WebDriver initialized
+2025-12-02 17:39:30.552 | INFO     | utils.locator_generator:discover_locators:212 - Discovered 0 locators on https://xelta.ai/auth/login

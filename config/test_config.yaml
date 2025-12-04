@@ -1,5 +1,5 @@
 # Top-level configuration for dynamic website testing
-base_url: "https://xelta.ai/auth/login"
+base_url: "https://xelta.ai"
 browser: "chrome"
 headless: true
 
@@ -12,14 +12,15 @@ credentials:
 # Turn test suites on/off quickly
 test_flags:
   functional: true
-  ui: false
-  security: false
+  ui: true
+  security: true
   regression: false
 
 # Optional: list of public pages to probe for status/SEO/basic checks
 pages:
   - "/"
   - "/login"
+  - "/auth/login/"
 
 timeouts:
   implicit: 5
